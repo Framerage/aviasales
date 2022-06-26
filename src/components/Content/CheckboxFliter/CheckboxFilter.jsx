@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./checkboxFilter.module.css";
-const CheckboxFilter = ({ onChange}) => {
+const CheckboxFilter = ({ onChange }) => {
   return (
     <div className={classes.leftFilter}>
       <span className={classes.leftFilter__head}>КОЛИЧЕСТВО ПЕРЕСАДОК</span>
