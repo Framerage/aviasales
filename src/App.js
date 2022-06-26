@@ -2,7 +2,8 @@ import React from "react";
 import Content from "./components/Content/Contetn";
 import Header from "./components/Header/Header";
 import './app.css'
-function App() {  
+function App() { 
+   
   return (
     <div className="wrapper">
       <Header/>
