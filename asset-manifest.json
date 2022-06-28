@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/aviasales/static/css/main.bbaeb26f.css",
+    "main.js": "/aviasales/static/js/main.b72b2aaf.js",
+    "static/media/logoVolga.jpg": "/aviasales/static/media/logoVolga.d66ade97300a1e079b8c.jpg",
+    "static/media/logoTurbo.jpg": "/aviasales/static/media/logoTurbo.62063867754066668b97.jpg",
+    "static/media/Logo.png": "/aviasales/static/media/Logo.bd78256a55a605f685eb.png",
+    "static/media/logoS7.jpg": "/aviasales/static/media/logoS7.605f62753f567e8f6b83.jpg",
+    "index.html": "/aviasales/index.html",
+    "main.bbaeb26f.css.map": "/aviasales/static/css/main.bbaeb26f.css.map",
+    "main.b72b2aaf.js.map": "/aviasales/static/js/main.b72b2aaf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbaeb26f.css",
+    "static/js/main.b72b2aaf.js"
+  ]
+}
