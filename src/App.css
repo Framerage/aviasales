@@ -5,3 +5,9 @@
     position: relative;
     font-size: 4px;
 }
+@media screen and (min-width: 320px)and (max-width:476px){
+    html,body{
+        width: 476px;
+        min-width: 320px;
+    }
+}

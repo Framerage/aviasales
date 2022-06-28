@@ -1,26 +1,14 @@
 import React from "react";
 import logo from "./Logo.png";
+import classes from './header.module.css'
 const Header = () => {
   return (
-    <header
-      style={{
-        height: "150px",
-        minHeight: "60px",
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-
-      }}
+    <header className={classes.header}
     >
       <img
         alt="LOGO"
         src={logo}
-        style={{
-        width: "60px",
-        borderRadius: "30px",
-        minWidth: "40px",
-        }}
+        className={classes.header__logo}
       />
     </header>
   );

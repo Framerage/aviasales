@@ -115,17 +115,9 @@ const Ticket = ({ props }) => {
                   : " ПЕРЕСАДОК"}
                 <br />
               </span>
-              {route.stops.length < 4 ? (
                 <span className={classes.ticket__secondText}>
                   {route.stops.join(",")}
                 </span>
-              ) : (
-                <span className={classes.ticket__secondText}>
-                  {route.stops.slice(0, 2).join(",")}
-                  <br />
-                  {route.stops.slice(2, route.stops.length).join(",")}
-                </span>
-              )}
             </span>
           </div>
         </div>

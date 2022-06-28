@@ -8,6 +8,7 @@ import TicketsService from "../../API/TicketsService";
 import Loader from "../UI/loader/Loader";
 import { useFetching } from "../Hooks/useFetching";
 import { getPagesArray, getPagesCount } from "../../utils/pages";
+import classes from './content.module.css'
 
 const Content = () => {
   const [tickets, setTickets] = useState([]);
@@ -33,7 +34,7 @@ const Content = () => {
     checked5
   );
 
-  let pagesArray = getPagesArray(totalPages);
+  //let pagesArray = getPagesArray(totalPages);
 
   const [fetchTicketInfo, isTicketsLoading, ticketError] = useFetching(
     async () => {
@@ -71,23 +72,22 @@ const Content = () => {
   useEffect(() => {
     fetchTicketInfo();
   }, [page]);
+
   return (
-    <main
-      style={{
-        display: "flex",
-        justifyContent: "center",
-      }}
+    <main className={classes.content}
     >
-      <aside>
+      <aside className={classes.content__checkboxFilter}>
         <CheckboxFilter onChange={getCheckedBox} />
       </aside>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div 
+      className={classes.content__main}
+      >
         <TabsParamsFilter
           value={tabsFilter}
           checkTab={(el) => setTabsFilter(el.target.value)}
           key={Date.now() + 1}
         />
-        <div>
+        <div className={classes.content__tickets}>
           {ticketError ? (
             <h2 style={{ textAlign: "center", fontSize: "10em" }}>
               Error with tickets

@@ -1,9 +1,10 @@
 import React from "react";
 import FilterBtn from "../../UI/buttons/FilterBtn";
+import classes from  './tabsParamsFilter.module.css'
 
 const TopFilter = ({ checkTab, value }) => {
   return (
-    <div style={{ display: "flex", marginLeft: "20px" }} value={value}>
+    <div className={classes.tabsFilter} value={value}>
       <FilterBtn
         onClick={checkTab}
         value="cheapest"
